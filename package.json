@@ -4,7 +4,8 @@
     "description": "Testing TypeScript code",
     "main": "index.js",
     "scripts": {
-        "start": "tsc && node index.js"
+        "start": "tsc && node index.js",
+        "github": "git status && git add . && git status && git commit -m 'auto push' && git status"
     },
     "dependencies": {
         "random": "^4.1.0"
