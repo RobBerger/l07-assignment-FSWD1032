@@ -1,6 +1,4 @@
 "use strict";
-function randomNumberLimiter(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-const oneThroughSix = randomNumberLimiter(1, 6);
-console.log(oneThroughSix);
+Object.defineProperty(exports, "__esModule", { value: true });
+const randomGenerator_1 = require("./randomGenerator");
+console.log((0, randomGenerator_1.rollDice)());
