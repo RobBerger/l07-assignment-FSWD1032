@@ -1,4 +1,14 @@
 import { rollDice, flipCoin } from './randomGenerator';
 
-console.log(rollDice());
-console.log(flipCoin());
+let dieArr: number[] = [ ];
+for (let i = 0; i < 10; i++) {
+    dieArr.push(rollDice());
+}
+console.log(dieArr);
+
+
+let coinArr: Array<string> = [ ];
+for (let i = 0; i < 50; i++) {
+    coinArr.push(flipCoin());
+}
+console.log(coinArr);
